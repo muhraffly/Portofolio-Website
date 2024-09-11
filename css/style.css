@@ -1,0 +1,442 @@
+:root {
+    --mainColor: #252734;
+    --secondaryColor: #333646;
+    --accentColor: #FF9100;
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'ubuntu', sans-serif;
+
+}
+
+section {
+    scroll-margin-top: 70px; /* Sesuaikan 80px dengan tinggi navbar kamu */
+  }
+
+/* NavBar */
+.nav-link.active {
+    color: var(--accentColor) !important;
+    font-weight: 700;
+}
+
+.nav-scroll {
+    background-color: var(--secondaryColor) !important;
+    z-index: 10;
+    transition: .6s;
+}
+
+/* End NavBar */
+
+/* Home Section */
+.color-accent{
+    color: var(--accentColor);
+}
+
+#home {
+    color: #FFF;
+    min-height: 100vh;
+    padding-top: 75px;
+}
+
+#home h1{
+    font-size: 3rem;
+}
+
+#home h2{
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top:20px;
+}
+
+#home p{
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* Button CTA */
+.btn-custom1 {
+    background-color: var(--accentColor);
+    margin-right:10px;
+    text-align : center;
+    color : #FFF;
+    min-width : 150px;
+    height : 45px;
+    font-weight : 700;
+    font-size : 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-custom11 {
+    background-color: #f0f0f0;
+    text-align : center;
+    color : var (--mainColor);
+    min-width : 150px;
+    height : 45px;
+    font-weight : 700;
+    font-size : 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-custom2 {
+    background-color: var(--mainColor);
+    text-align : center;
+    color : #FFF;
+    min-width : 150px;
+    height : 40px;
+    font-weight : 700;
+    font-size : .9rem;
+    border-radius: 25px;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8);
+    transform: scale(1.05);
+}
+
+.btn-custom11:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+    transform: scale(1.05);
+}
+
+.btn-custom2:hover {
+    color: var(--mainColor);
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+
+}
+
+.social-icon {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+.social-logo {
+    margin-right: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.social-logo:hover{
+    transform: scale(1.4);
+}
+
+.cv {
+    color: #FFF;
+    cursor : pointer;
+    font-size: 1.1rem; 
+}
+
+.img {
+    border-radius: 50%;
+    border: 7px solid var(--accentColor);
+
+}
+
+/* End Home Section */
+
+/* About Section */
+#about {
+    color:#FFF;
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    padding-top : 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+hr {
+    width: 35%;
+    height: 5px;
+    color: var(--accentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+/* End About Section */
+
+/* Skill Section */
+#skill {
+    color: #FFF;
+    width: 100%;
+    min-height: 800px;
+}
+
+#skill img {
+    width: 10%;
+    margin: 10px;
+}
+
+.skill-text {
+    margin-top: 30px;
+    color: var(--accentColor);
+}
+
+
+
+/* End Skill Section */
+
+/* Certification Section */
+#certificate {
+    color: #FFF;
+    padding: 80px;
+    padding-bottom: 80px;
+    background-color: var(--secondaryColor);
+}
+
+#certificate .card {
+    background-color: #414558;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certificate .card:hover {
+    background-color: var(--accentColor);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+#certificate img {
+    width:100%;
+}
+
+#certificate p {
+    font-size: .8rem;
+}
+
+#certificate h5 {
+    font-size: 1.1rem;
+}
+
+.certificate-content {
+    margin-top: 10px;
+}
+
+#certificate .carousel-inner {
+    padding:30px;
+}
+
+#certificate .carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+#carouselIndicatorsCertificate {
+    padding:50px;
+}
+
+#carouselIndicatorsCertificate .carousel-control-prev,
+#carouselIndicatorsCertificate .carousel-control-next {
+    width: auto;
+    height: auto;
+}
+
+#carouselIndicatorsCertificate .carousel-control-prev {
+    left: 0;
+}
+
+#carouselIndicatorsCertificate .carousel-control-next {
+    right: 0;
+}
+
+/* Untuk efek transisi yang lebih halus */
+#carouselIndicatorsCertificate .carousel-item-next,
+#carouselIndicatorsCertificate .carousel-item-prev,
+#carouselIndicatorsCertificate .carousel-item.active {
+    transition: transform 0.6s ease-in-out;
+}
+
+#carouselIndicatorsCertificate .carousel-item-next.carousel-item-left,
+#carouselIndicatorsCertificate .carousel-item-prev.carousel-item-right {
+    transform: translateX(0);
+}
+
+#certificate .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* End Certification Section */
+
+
+
+/* Projects Section */
+#projects {
+    margin-top:-400px;
+    color: #FFF;
+    padding: 80px;
+    padding-top: 400px;
+    padding-bottom: 80px;
+    background-color: var(--mainColor);
+}
+
+#projects .card-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#projects .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gambar menyesuaikan ukuran card tanpa merusak proporsinya */
+}
+
+
+#projects .card {
+    background-color: #fff;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Rasio aspek 16:9 (ubah sesuai kebutuhan) */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 9px 9px 5px var(--accentColor);
+    border-radius: 10px;
+    }
+
+#projects .card:hover {
+    background-color: #FFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+#projects .card:hover h2 {
+    color: var(--mainColor);
+}
+
+#projects .card:hover h3 {
+    color: var(--mainColor);
+}
+
+#projects .card:hover p {
+    color: var(--mainColor);
+}   
+
+#projects h2 {
+    color: var(--secondaryColor);
+
+}
+
+#projects h3 {
+    color: var(--secondaryColor);
+
+}
+
+#projects p {
+    color: var(--secondaryColor);
+
+}
+
+#projects .meatfyi-img {
+    margin: 10px;
+}
+
+#projects .carousel-inner {
+    padding:30px;
+}
+
+#projects .carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+#carouselIndicatorsProjects {
+    padding:50px;
+}
+
+#carouselIndicatorsProjects .carousel-control-prev,
+#carouselIndicatorsProjects .carousel-control-next {
+    width: auto;
+    height: auto;
+}
+
+#carouselIndicatorsProjects .carousel-control-prev {
+    left: 0;
+}
+
+#carouselIndicatorsProjects .carousel-control-next {
+    right: 0;
+}
+
+/*
+#projects .card:hover {
+    background-color: var(--accentColor);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+#projects img {
+    width:100%;
+}
+
+#projects p {
+    font-size: .8rem;
+}
+
+#projects h5 {
+    font-size: 1.1rem;
+}
+
+.projects-content {
+    margin-top: 10px;
+}
+
+#projects .carousel-inner {
+    padding:30px;
+}
+
+#projects .carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+#carouselIndicatorsProjects {
+    padding:50px;
+}
+
+#carouselIndicatorsProjects .carousel-control-prev,
+#carouselIndicatorsProjects .carousel-control-next {
+    width: auto;
+    height: auto;
+}
+
+#carouselIndicatorsProjects .carousel-control-prev {
+    left: 0;
+}
+
+#carouselIndicatorsProjects .carousel-control-next {
+    right: 0;
+}
+
+/* Untuk efek transisi yang lebih halus */
+/* #carouselIndicatorsProjects .carousel-item-next,
+#carouselIndicatorsProjects .carousel-item-prev,
+#carouselIndicatorsProjects .carousel-item.active {
+    transition: transform 0.6s ease-in-out;
+} */
+
+/* #carouselIndicatorsProjects .carousel-item-next.carousel-item-left,
+#carouselIndicatorsProjects .carousel-item-prev.carousel-item-right {
+    transform: translateX(0);
+} */
+
+/* #projects .row {
+    margin-left: 0;
+    margin-right: 0;
+} */
+
+/* End Projects Section */
+
+
+
+
+/* Footer */
+.social-icon-footer {
+    margin-bottom: 10px;
+}
