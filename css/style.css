@@ -37,7 +37,7 @@ section {
 #home {
     color: #FFF;
     min-height: 100vh;
-    padding-top: 75px;
+    padding-top: 80px;
 }
 
 #home h1{
@@ -109,14 +109,19 @@ section {
 
 }
 
+.social-icon-home {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .social-icon {
-    margin-right: .7em;
     margin-bottom: 10px;
 }
 
 .social-logo {
-    margin-right: 20px;
+    margin: 7px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border:50%;
 
 }
 
@@ -144,8 +149,8 @@ section {
     min-height: 300px;
     width: 100%;
     background-color: var(--secondaryColor);
-    padding-top : 80px;
-    padding-bottom: 80px;
+    padding-top : 50px;
+    padding-bottom: 50px;
     margin-bottom: 80px;
 }
 hr {
@@ -162,7 +167,7 @@ hr {
 #skill {
     color: #FFF;
     width: 100%;
-    min-height: 800px;
+    min-height: 750px;
 }
 
 #skill img {
@@ -182,14 +187,16 @@ hr {
 /* Certification Section */
 #certificate {
     color: #FFF;
-    padding: 80px;
-    padding-bottom: 80px;
+    /* min-height: 600px; */
+    width:100%;
+    padding-top:50px;
+    padding-bottom:50px;  
     background-color: var(--secondaryColor);
 }
 
 #certificate .card {
     background-color: #414558;
-    margin-top: 10px;
+    height: 610px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -199,63 +206,25 @@ hr {
     transform: scale(1.05);
 }
 
-#certificate img {
-    width:100%;
+
+/* #certificate .card {
+    background-color: #414558;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certificate .card:hover {
+    background-color: var(--accentColor);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+} */
+
+#certificate h2 {
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 #certificate p {
-    font-size: .8rem;
-}
-
-#certificate h5 {
-    font-size: 1.1rem;
-}
-
-.certificate-content {
-    margin-top: 10px;
-}
-
-#certificate .carousel-inner {
-    padding:30px;
-}
-
-#certificate .carousel-item {
-    transition: transform 0.6s ease-in-out;
-}
-
-#carouselIndicatorsCertificate {
-    padding:50px;
-}
-
-#carouselIndicatorsCertificate .carousel-control-prev,
-#carouselIndicatorsCertificate .carousel-control-next {
-    width: auto;
-    height: auto;
-}
-
-#carouselIndicatorsCertificate .carousel-control-prev {
-    left: 0;
-}
-
-#carouselIndicatorsCertificate .carousel-control-next {
-    right: 0;
-}
-
-/* Untuk efek transisi yang lebih halus */
-#carouselIndicatorsCertificate .carousel-item-next,
-#carouselIndicatorsCertificate .carousel-item-prev,
-#carouselIndicatorsCertificate .carousel-item.active {
-    transition: transform 0.6s ease-in-out;
-}
-
-#carouselIndicatorsCertificate .carousel-item-next.carousel-item-left,
-#carouselIndicatorsCertificate .carousel-item-prev.carousel-item-right {
-    transform: translateX(0);
-}
-
-#certificate .row {
-    margin-left: 0;
-    margin-right: 0;
+    font-size: .9rem;
 }
 
 /* End Certification Section */
@@ -264,11 +233,10 @@ hr {
 
 /* Projects Section */
 #projects {
-    margin-top:-400px;
     color: #FFF;
-    padding: 80px;
-    padding-top: 400px;
-    padding-bottom: 80px;
+    /* min-height: 600px; */
+    width:100%;
+    padding-top:50px;   
     background-color: var(--mainColor);
 }
 
@@ -439,4 +407,6 @@ hr {
 /* Footer */
 .social-icon-footer {
     margin-bottom: 10px;
+    border-radius: 50%;
+    border: 10px;
 }
