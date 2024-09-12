@@ -197,12 +197,13 @@ hr {
 #certificate .card {
     background-color: #414558;
     height: 610px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #certificate .card:hover {
     background-color: var(--accentColor);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     transform: scale(1.05);
 }
 
@@ -240,164 +241,28 @@ hr {
     background-color: var(--mainColor);
 }
 
-#projects .card-img-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+#projects .card {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow : hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background-color : #000;
+
 }
 
 #projects .card-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Gambar menyesuaikan ukuran card tanpa merusak proporsinya */
+    object-fit: cover; /* Gambar akan menyesuaikan ukuran card tanpa distorsi */
 }
-
-
-#projects .card {
-    background-color: #fff;
-    margin-top: 10px;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* Rasio aspek 16:9 (ubah sesuai kebutuhan) */
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 9px 9px 5px var(--accentColor);
-    border-radius: 10px;
-    }
 
 #projects .card:hover {
     background-color: #FFF;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 9px 9px 5px var(--accentColor);
     transform: scale(1.05);
-}
-
-#projects .card:hover h2 {
-    color: var(--mainColor);
-}
-
-#projects .card:hover h3 {
-    color: var(--mainColor);
-}
-
-#projects .card:hover p {
-    color: var(--mainColor);
-}   
-
-#projects h2 {
-    color: var(--secondaryColor);
 
 }
 
-#projects h3 {
-    color: var(--secondaryColor);
-
-}
-
-#projects p {
-    color: var(--secondaryColor);
-
-}
-
-#projects .meatfyi-img {
-    margin: 10px;
-}
-
-#projects .carousel-inner {
-    padding:30px;
-}
-
-#projects .carousel-item {
-    transition: transform 0.6s ease-in-out;
-}
-
-#carouselIndicatorsProjects {
-    padding:50px;
-}
-
-#carouselIndicatorsProjects .carousel-control-prev,
-#carouselIndicatorsProjects .carousel-control-next {
-    width: auto;
-    height: auto;
-}
-
-#carouselIndicatorsProjects .carousel-control-prev {
-    left: 0;
-}
-
-#carouselIndicatorsProjects .carousel-control-next {
-    right: 0;
-}
-
-/*
-#projects .card:hover {
-    background-color: var(--accentColor);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-}
-
-#projects img {
-    width:100%;
-}
-
-#projects p {
-    font-size: .8rem;
-}
-
-#projects h5 {
-    font-size: 1.1rem;
-}
-
-.projects-content {
-    margin-top: 10px;
-}
-
-#projects .carousel-inner {
-    padding:30px;
-}
-
-#projects .carousel-item {
-    transition: transform 0.6s ease-in-out;
-}
-
-#carouselIndicatorsProjects {
-    padding:50px;
-}
-
-#carouselIndicatorsProjects .carousel-control-prev,
-#carouselIndicatorsProjects .carousel-control-next {
-    width: auto;
-    height: auto;
-}
-
-#carouselIndicatorsProjects .carousel-control-prev {
-    left: 0;
-}
-
-#carouselIndicatorsProjects .carousel-control-next {
-    right: 0;
-}
-
-/* Untuk efek transisi yang lebih halus */
-/* #carouselIndicatorsProjects .carousel-item-next,
-#carouselIndicatorsProjects .carousel-item-prev,
-#carouselIndicatorsProjects .carousel-item.active {
-    transition: transform 0.6s ease-in-out;
-} */
-
-/* #carouselIndicatorsProjects .carousel-item-next.carousel-item-left,
-#carouselIndicatorsProjects .carousel-item-prev.carousel-item-right {
-    transform: translateX(0);
-} */
-
-/* #projects .row {
-    margin-left: 0;
-    margin-right: 0;
-} */
 
 /* End Projects Section */
 
