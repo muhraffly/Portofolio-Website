@@ -20,17 +20,21 @@
         width: 12%;
     }
 
+    #certificate .card {
+        height: 540px;
+    }
+
     #certificate h5 {
         font-size: 1rem;
     }
 
-    #certificate p {
-        font-size: .8rem;
+    #certificate h2 {
+        font-size: 0.9rem;
     }
 
-    #certificate .col-lg-3 {
-        flex: 0 0 50%; /* Menampilkan hanya 2 card dengan lebar masing-masing 50% */
-        max-width: 50%;
+    #certificate p {
+        font-size: .8rem;
+        text-align: justify !important;
     }
 
     #projects .meatfyi-img {
@@ -47,6 +51,11 @@
 
     #projects p {
         font-size: 0.7rem; /* Smaller paragraph text */
+    }
+
+    #about .p-contact {
+        text-align: center !important;
+        font-size: .9rem;
     }
 
 }
@@ -73,14 +82,27 @@
         width: 18%;
     }
 
-    #certificate p {
-        font-size: .8rem;
+    #certificate .card {
+        height: auto !important;
     }
 
-    #certificate .col-lg-3 {
-        flex: 0 0 100%; /* Menampilkan hanya 2 card dengan lebar masing-masing 50% */
-        max-width: 100%;
+    #certificate h2 {
+        font-size: 1.1rem;
     }
+
+    #certificate p {
+        font-size: .8rem;
+        text-align: justify !important;
+    }
+
+    .btn-custom2 {
+        min-width : 120px;
+        height : 40px;
+        font-weight : 700;
+        font-size : .9rem;
+        border-radius: 25px;
+    }
+
 
     #projects .meatfyi-img {
         width: 20%; /* Full width for the image */
@@ -104,17 +126,18 @@
 }
 
 @media screen and (max-width : 576px) {
+    hr {
+        width: 75%;
+    }
+
     #home img {
         width:50%;
     }
 
     .social-icon {
-        left: 35%;
+        left: 27%;
         transform: translate (-35%);
     }
-
-    
-
 
     #home .row {
         padding-bottom: 70px;
@@ -125,17 +148,29 @@
         font-size: .9rem;
     }
 
-    #certificate .col-lg-3 {
-        flex: 0 0 100%; /* Menampilkan hanya 2 card dengan lebar masing-masing 50% */
-        max-width: 100%;
-    }
-
-    #certificate h5 {
+    #about .p-contact {
+        text-align: center !important;
         font-size: .9rem;
     }
 
+    #certificate h2 {
+        font-size: 1rem;
+    }
+
     #certificate p {
-        font-size: .8rem;
+        font-size: .9rem;
+    }
+
+    .btn-custom2 {
+        min-width : 120px;
+        height : 40px;
+        font-weight : 700;
+        font-size : .9rem;
+        border-radius: 25px;
+    }
+
+    #certificate .card {
+        height: auto !important;
     }
 
     #projects .meatfyi-img {
@@ -183,9 +218,8 @@
         transform: translate (-25%);
     }
 
-    #certificate .col-lg-3 {
-        flex: 0 0 100%; /* Menampilkan hanya 2 card dengan lebar masing-masing 50% */
-        max-width: 100%;
+    #certificate .card {
+        height: auto !important;
     }
 
     #projects .meatfyi-img {
