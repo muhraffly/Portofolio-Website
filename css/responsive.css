@@ -37,22 +37,6 @@
         text-align: justify !important;
     }
 
-    #projects .meatfyi-img {
-        width: 80%; /* Adjust image width */
-    }
-    #projects .card {
-        padding: 50px; /* Reduce padding for smaller screens */
-        height: 500px; /* Let height adjust automatically */
-    }
-
-    #projects h2, #projects h3 {
-        font-size: 1rem; /* Smaller heading */
-    }
-
-    #projects p {
-        font-size: 0.7rem; /* Smaller paragraph text */
-    }
-
     #about .p-contact {
         text-align: center !important;
         font-size: .9rem;
@@ -103,26 +87,6 @@
         border-radius: 25px;
     }
 
-
-    #projects .meatfyi-img {
-        width: 20%; /* Full width for the image */
-    }
-    #projects .card {
-        padding: 30px; /* Smaller padding */
-        height: 500px;
-    }
-
-    #projects .row {
-        flex-direction: column; /* Stack the items vertically */
-    }
-
-    #projects h2, #projects h3 {
-        font-size: 1rem; /* Smaller heading */
-    }
-
-    #projects p {
-        font-size: 0.7rem; /* Smaller paragraph text */
-    }
 }
 
 @media screen and (max-width : 576px) {
@@ -173,22 +137,6 @@
         height: auto !important;
     }
 
-    #projects .meatfyi-img {
-        width: 100%; /* Full width */
-    }
-    #projects .card {
-        padding: 20px; /* Minimize padding */
-        height: auto;
-    }
-
-    #projects .row {
-        flex-direction: column; /* Stack items */
-    }
-    
-    #projects h2, #projects h3 {
-        font-size: 1rem; /* Adjust heading size */
-    }
-
     #footer p {
         font-size: 0.8rem !important;
     }
@@ -220,22 +168,6 @@
 
     #certificate .card {
         height: auto !important;
-    }
-
-    #projects .meatfyi-img {
-        width: 100%; /* Image takes full width */
-    }
-    #projects .card {
-        padding: 10px;
-        height: auto;
-    }
-
-    #projects h2, #projects h3 {
-        font-size: 1rem; /* Smaller heading */
-    }
-
-    #projects p {
-        font-size: 0.5rem; /* Smaller paragraph text */
     }
 
     #footer p {
