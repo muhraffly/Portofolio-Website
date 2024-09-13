@@ -258,7 +258,7 @@ hr {
 
 #projects .card:hover {
     background-color: #FFF;
-    box-shadow: 9px 9px 5px var(--accentColor);
+    box-shadow: 6px 6px 6px var(--accentColor);
     transform: scale(1.05);
 
 }
