@@ -167,12 +167,19 @@ hr {
 #skill {
     color: #FFF;
     width: 100%;
-    min-height: 750px;
+    min-height: 550px;
+    padding-bottom: 50px;
 }
 
 #skill img {
     width: 10%;
     margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#skill img:hover{
+    transform: scale(1.3);
 }
 
 .skill-text {
